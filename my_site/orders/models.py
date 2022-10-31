@@ -1,7 +1,7 @@
 from django.db import models
 
 class SalesOrder(models.Model):
-    amount = models.IntegerField()
-    description = models.CharField(max_length=255)
-
+    amounts = models.IntegerField()
+    descriptions = models.CharField(max_length=255)
+    color = models.CharField(max_length=255, blank=False)
 
